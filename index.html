@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Niccolo' Fineschi | Biomedical AI Engineer</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+    </style>
+</head>
+<body class="bg-[#fafafa] text-[#1a1a1a] antialiased selection:bg-neutral-200">
+
+    <div class="max-w-3xl mx-auto px-6 py-16 md:py-24 space-y-16">
+
+        <!-- HEADER SECTION -->
+        <header class="flex flex-col-reverse sm:flex-row sm:items-center sm:justify-between gap-6 pb-8 border-b border-neutral-200">
+            <div class="space-y-3">
+                <h1 class="text-4xl font-bold tracking-tight">Niccolo' Fineschi</h1>
+                <p class="text-xl text-neutral-600 font-normal inline-flex items-center gap-2">
+                    <span class="material-symbols-rounded text-[22px]">biotech</span> 
+                    <span>Biomedical AI Engineer</span>
+                </p>
+                <div class="flex items-center gap-4 pt-2 text-sm text-neutral-500 font-medium">
+                    <a href="https://github.com/niccofine" target="_blank" class="hover:text-black transition-colors">GitHub</a>
+                    <span class="text-neutral-300">•</span>
+                    <a href="https://linkedin.com/in/niccofine" target="_blank" class="hover:text-black transition-colors">LinkedIn</a>
+                    <span class="text-neutral-300">•</span>
+                    <a href="mailto:niccofine@gmail.com" class="hover:text-black transition-colors">Email</a>
+                </div>
+            </div>
+            <div class="shrink-0">
+                <img src="https://avatars.githubusercontent.com/u/20282351?v=4" 
+                     alt="Niccolo' Fineschi" 
+                     class="w-48 h-48 rounded-full object-cover border border-neutral-200 shadow-sm">
+            </div>
+        </header>
+
+        <!-- ABOUT SECTION -->
+        <section class="space-y-4">
+            <div class="flex items-center gap-1.5 text-neutral-400">
+                <span class="material-symbols-rounded text-lg">person</span>
+                <h2 class="text-xs font-semibold uppercase tracking-widest">About</h2>
+            </div>
+            <p class="text-[16px] leading-relaxed text-neutral-700 font-normal">
+                Bridging between <b>biomedical research</b> and <b>artificial intelligence</b>, merging clinical insights with cutting-edge technology.</br>
+                I am specialized on the application of modern AI techniques to biomedical data, comprehending medical <i>images</i>, clinical <i>information</i> and biological <i>signals</i>, with a specific focus on <b>physics-informed models</b> for medical forecasting.
+            </p>
+        </section>
+
+        <!-- MASTER THESIS -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-1.5 text-neutral-400">
+                <span class="material-symbols-rounded text-lg">book_5</span>
+                <h2 class="text-xs font-semibold uppercase tracking-widest">Master Thesis</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-medium text-neutral-900">Deep learning-based model for Age-related Macular Degeneration forecasting using retinal fundus images</h3>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 space-y-3">
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-neutral-500">
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Python</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Visual-Language Models</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">ODE Neural Networks</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- DEEP LEARNING PROJECTS -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-1.5 text-neutral-400">
+                <span class="material-symbols-rounded text-lg">network_intelligence</span>
+                <h2 class="text-xs font-semibold uppercase tracking-widest">Deep Learning Projects</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <img src="cells.jpg" 
+                            alt="Project Visual" class="w-full h-40 object-cover border-b border-neutral-100">
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-medium text-neutral-900">Cardiosphere cell segmentation from microscopy images</h3>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                Implementation of a full image processing pipeline (pre-processing, deep learning segmentation, post-processing) on fluorescence microscopy images using <a href="https://github.com/open-mmlab/mmsegmentation" target="_blank" class="text-blue-500 hover:underline">MMSegmentation</a> and <a href="https://github.com/facebookresearch/detectron2" target="_blank" class="text-blue-500 hover:underline">Detectron2</a> models.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 space-y-3">
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-neutral-500">
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Python</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">MMEngine</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Group project</span>
+                        </div>
+                        <div class="text-xs font-medium pt-1">
+                            <a href="https://github.com/niccofine/Fluorescence-Microscopy" target="_blank" class="text-neutral-900 hover:underline inline-flex items-center gap-1">GitHub Repository &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <img src="backbone.png" 
+                            alt="Project Visual" class="w-full h-40 object-cover border-b border-neutral-100">
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-medium text-neutral-900">Backbone segmentation from CT-scan images</h3>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                Implementation of a full image processing pipeline (pre-processing, deep learning segmentation, post-processing) on back CT-scan images using <a href="https://github.com/open-mmlab/mmsegmentation" target="_blank" class="text-blue-500 hover:underline">MMSegmentation</a> models
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 space-y-3">
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-neutral-500">
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Python</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">MMEngine</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Group project</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MACHINE LEARNING PROJECTS -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-1.5 text-neutral-400">
+                <span class="material-symbols-rounded text-lg">network_intel_node</span>
+                <h2 class="text-xs font-semibold uppercase tracking-widest">Machine Learning Projects</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <img src="lies.jpg" 
+                            alt="Project Visual" class="w-full h-40 object-cover border-b border-neutral-100">
+                        
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-medium text-neutral-900">Low-stakes lies detection from face video acquisitions</h3>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                Development of a lie detection app based on novel face video acquisitions during visual scene description, comprehending: an acquisition UI, a complete video processing pipeline based on <a href="https://developers.google.com/mediapipe" target="_blank", class="text-blue-500 hover:underline">MediaPipe</a> (feature extraction, selection, ensemble machine learning classifiers) and explainability visualization using an <a href="https://developer.apple.com/augmented-reality/arkit/" target="_blank" class="text-blue-500 hover:underline">ARKit Blendshapes</a> model.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 space-y-3">
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-neutral-500">
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Python</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">MediaPipe</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Unity</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Group project</span>
+                        </div>
+                        <div class="text-xs font-medium pt-1">
+                            <a href="https://github.com/niccofine/Lie-Detection" target="_blank" class="text-neutral-900 hover:underline inline-flex items-center gap-1">GitHub Repository &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <img src="CADs.jpg" 
+                            alt="Project Visual" class="w-full h-40 object-cover border-b border-neutral-100">
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-medium text-neutral-900">Rectal cancer CAD systems from T2 MRI/ADC images</h3>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                Development of two CAD systems for segmentation and treatment response prediction implementing feature extraction (Radiomics-based), feature selection methods and various machine learning classifiers on T2-weighted MRI images and ADC maps.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 space-y-3">
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-neutral-500">
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">MATLAB</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Group project</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-medium text-neutral-900">Gait status prediction from lower limbs EMG signals</h3>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                Development of a classifier for walk/run prediction using muscle synergies extracted from EMG signals, supported by MANOVA and PCA analysis and validated on an external independent dataset.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 space-y-3">
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-neutral-500">
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">MATLAB</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Group project</span>
+                        </div>
+                        <div class="text-xs font-medium pt-1">
+                            <a href="https://github.com/niccofine/Locomotion-Type" target="_blank" class="text-neutral-900 hover:underline inline-flex items-center gap-1">GitHub Repository &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-medium text-neutral-900">Target-reaching exergaming for muscle rehabilitation</h3>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                Development of a domestic exergaming based on webcam acquisitions and body's center of mass estimation using <a href="https://github.com/CMU-Perceptual-Computing-Lab/openpose" target="_blank" class="text-blue-500 hover:underline">OpenPose</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 space-y-3">
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-neutral-500">
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">MATLAB</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">OpenPose</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-medium text-neutral-900">Prediction of ventilation weaning using clinical data</h3>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                Application of data inputting, feature selection methods, machine learning classifiers and fuzzy logic to develop various classifiers for success prediction of mechanical ventilation weaning.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 space-y-3">
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-neutral-500">
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">MATLAB</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Fuzzy Logic</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Group project</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- MISCELLANEOUS PROJECTS -->
+        <section class="space-y-6">
+            <div class="flex items-center gap-1.5 text-neutral-400">
+                <span class="material-symbols-rounded text-lg">shuffle</span>
+                <h2 class="text-xs font-semibold uppercase tracking-widest">Miscellaneous Projects</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <img src="depression.png" 
+                            alt="Project Visual" class="w-full h-40 object-cover border-b border-neutral-100">
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-medium text-neutral-900">Depression detection system using affective computing</h3>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                Idealization of an hybrid deep / machine learning multimodal system for depression assessment using video speech acquisitions and heart data.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 space-y-3">
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-neutral-500">
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Group project</span>
+                        </div>
+                        <div class="text-xs font-medium pt-1">
+                            <a href="https://drive.google.com/file/d/1KinLwCMii255C_tEJHyf5u8FaEo90LgQ/view?usp=sharing" target="_blank" class="text-neutral-900 hover:underline inline-flex items-center gap-1">Report &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <img src="telemonitoring.png" 
+                            alt="Project Visual" class="w-full h-40 object-cover border-b border-neutral-100">
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-medium text-neutral-900">Pipeline software design for telemonitoring platform</h3>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                UML process design and user interface modeling for an heart failure treatment telemonitoring platform.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 space-y-3">
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-neutral-500">
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">UML</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Group project</span>
+                        </div>
+                        <div class="text-xs font-medium pt-1">
+                            <a href="https://app.moqups.com/voigMKIGWRsIYGyN91ITTcwquHtaKvwR/view/page/a461a87d8" target="_blank" class="text-neutral-900 hover:underline inline-flex items-center gap-1">Interface mockup &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
+                    <div>
+                        <img src="baby.png" 
+                            alt="Project Visual" class="w-full h-40 object-cover border-b border-neutral-100">
+                        <div class="p-5 space-y-2">
+                            <h3 class="font-medium text-neutral-900">Baby growth telemonitor platform for body measurements</h3>
+                            <p class="text-sm text-neutral-600 leading-relaxed">
+                                Front and back-end development of a telemonitoring website for inputting and trend visualization of infants' body measurements.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="px-5 pb-5 pt-2 space-y-3">
+                        <div class="flex flex-wrap gap-1.5 text-[11px] font-mono text-neutral-500">
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">JavaScript</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">HTML</span>
+                            <span class="bg-neutral-100 px-2 py-0.5 rounded">Group project</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="space-y-4">
+            <div class="flex items-center gap-1.5 text-neutral-400">
+                <span class="material-symbols-rounded text-lg">build</span>
+                <h2 class="text-xs font-semibold uppercase tracking-widest">Skills</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
+                
+                <div>
+                    <h3 class="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">Data Science</h3>
+                    <ul class="text-sm space-y-1.5 text-neutral-700">
+                        <li>Statistical Analysis</li>
+                        <li>Multimodality</li>
+                        <li>Classification</li>
+                        <li>Segmentation</li>
+                        <li>Forecasting</li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">Machine Learning</h3>
+                    <ul class="text-sm space-y-1.5 text-neutral-700">
+                        <li>Feature Engineering</li>
+                        <li>Feature Selection</li>
+                        <li>Machine Learning Models</li>
+                        <li>Models Evaluation</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">Deep Learning</h3>
+                    <ul class="text-sm space-y-1.5 text-neutral-700">
+                        <li>Explainable AI</li>
+                        <li>Uncertainty Quantification</li>
+                        <li>Vision-Language Models</li>
+                        <li>Ordinary Differential Equations Neural Networks</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CODING SECTION -->
+        <section class="space-y-4">
+            <div class="flex items-center gap-1.5 text-neutral-400">
+                <span class="material-symbols-rounded text-lg">code</span>
+                <h2 class="text-xs font-semibold uppercase tracking-widest">Coding</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">
+                <div>
+                    <h3 class="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">Languages</h3>
+                    <ul class="text-sm space-y-1.5 text-neutral-700">
+                        <li>Python</li>
+                        <li>MATLAB</li>
+                        <li>R</li>
+                        <li>HTML</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">Python Libraries</h3>
+                    <ul class="text-sm space-y-1.5 text-neutral-700">
+                        <li>MatPlotLib</li>
+                        <li>MediaPipe</li>
+                        <li>MMEngine</li>
+                        <li>NumPy</li>
+                        <li>OpenCV</li>
+                        <li>Pandas</li>
+                        <li>PyRealSense2</li>
+                        <li>PyTorch</li>
+                        <li>SciKit-Image</li>
+                        <li>SciKit-Learn</li>
+                        <li>SciPy</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">Tools</h3>
+                    <ul class="text-sm space-y-1.5 text-neutral-700">
+                        <li>GIT</li>
+                        <li>Google Colab</li>
+                        <li>Kaggle</li>
+                        <li>Linux Environment</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOFTWARE SECTION -->
+        <section class="space-y-4">
+            <div class="flex items-center gap-1.5 text-neutral-400">
+                <span class="material-symbols-rounded text-lg">computer</span>
+                <h2 class="text-xs font-semibold uppercase tracking-widest">Software</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-2">                
+                <div>
+                    <h3 class="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">Documents</h3>
+                    <ul class="text-sm space-y-1.5 text-neutral-700">
+                        <li>LaTeX</li>
+                        <li>Office Suite</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">Graphics and Design</h3>
+                    <ul class="text-sm space-y-1.5 text-neutral-700">
+                        <li>3D Slicer</li>
+                        <li>Canva</li>
+                        <li>GIMP</li>
+                        <li>Inkscape</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xs font-semibold text-neutral-400 uppercase tracking-wider mb-2">3D Modeling</h3>
+                    <ul class="text-sm space-y-1.5 text-neutral-700">
+                        <li>SolidWorks</li>
+                        <li>Unity</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE SECTION -->
+        <section class="space-y-4">
+            <div class="flex items-center gap-1.5 text-neutral-400">
+                <span class="material-symbols-rounded text-lg">business_center</span>
+                <h2 class="text-xs font-semibold uppercase tracking-widest">Experience</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+                    <div>
+                        <h3 class="font-medium text-neutral-900">Guest Researcher</h3>
+                        <p class="text-sm text-neutral-500">The University of Osaka (Osaka, Japan)</p>
+                        <p class="text-sm text-neutral-500"><a href="https://is.d3c.osaka-u.ac.jp/en/">Intelligence and Sensing Laboratory (IsLab)</a></p>
+                    </div>
+                    <span class="text-xs font-mono text-neutral-400 shrink-0">Feb 2026 &mdash; Aug 2026</span>
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+                    <div>
+                        <h3 class="font-medium text-neutral-900">Intern</h3>
+                        <p class="text-sm text-neutral-500">Gradenigo Hospital (Turin, Italy)</p>
+                        <p class="text-sm text-neutral-500"><a href="https://www.gradenigo.it/">Quality Control Department</a></p>
+                    </div>
+                    <span class="text-xs font-mono text-neutral-400 shrink-0">Oct 2022 &mdash; Dec 2022</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- EDUCATION SECTION -->
+        <section class="space-y-4">
+            <div class="flex items-center gap-1.5 text-neutral-400">
+                <span class="material-symbols-rounded text-lg">school</span>
+                <h2 class="text-xs font-semibold uppercase tracking-widest">Education</h2>
+            </div>
+            <div class="space-y-6">
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+                    <div>
+                        <h3 class="font-medium text-neutral-900"><a href="https://didattica.polito.it/pls/portal30/sviluppo.offerta_formativa_2019.vis?p_a_acc=2024&p_sdu=32&p_cds=28" target="_blank">Master in Biomedical Engineering (eHealth track)</a></h3>
+                        <p class="text-sm text-neutral-500">Politecnico di Torino (Turin, Italy)</p>
+                    </div>
+                    <span class="text-xs font-mono text-neutral-400 shrink-0">Mar 2024 &mdash; Ongoing</span>
+                </div>
+
+                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+                    <div>
+                        <h3 class="font-medium text-neutral-900"><a href="https://didattica.polito.it/pls/portal30/sviluppo.offerta_formativa_2019.vis?p_a_acc=2020&p_sdu=32&p_cds=12" target="_blank">Bachelor in Biomedical Engineering</a></h3>
+                        <p class="text-sm text-neutral-500">Politecnico di Torino (Turin, Italy)</p>
+                    </div>
+                    <span class="text-xs font-mono text-neutral-400 shrink-0">Sep 2019 &mdash; March 2024</span>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="pt-8 border-t border-neutral-200 text-center sm:text-left">
+            <p class="text-xs text-neutral-400 font-mono">&copy; 2026 Niccolo' Fineschi. This site is static and collects no personal data. Hosted via <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" class="underline hover:text-neutral-600">GitHub Pages</a>.
+        </footer>
+        
+
+    </div>
+
+</body>
+</html>
