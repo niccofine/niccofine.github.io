@@ -3,8 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        (function () {
+            var saved = null;
+            try { saved = localStorage.getItem('theme'); } catch (e) {}
+            var mq = window.matchMedia('(prefers-color-scheme: dark)');
+            var apply = function (t) { document.documentElement.dataset.theme = t; };
+            apply(saved || (mq.matches ? 'dark' : 'light'));
+            mq.addEventListener('change', function (e) {
+                var s = null;
+                try { s = localStorage.getItem('theme'); } catch (err) {}
+                if (!s) apply(e.matches ? 'dark' : 'light');
+            });
+        })();
+    </script>
     <link rel="preload" href="material-symbols-subset.ttf" as="font" type="font/ttf" crossorigin>
     <style>
+        :root { --page-bg: #fafafa; --page-fg: #1a1a1a; color-scheme: light; }
+        :root[data-theme="dark"] {
+            color-scheme: dark;
+            --page-bg: #0f0f0f;
+            --page-fg: #ededed;
+            --color-white: #171717;
+            --color-black: #ffffff;
+            --color-neutral-50: #171717;
+            --color-neutral-100: #262626;
+            --color-neutral-200: #333333;
+            --color-neutral-300: #525252;
+            --color-neutral-400: #737373;
+            --color-neutral-500: #9a9a9a;
+            --color-neutral-600: #a8a8a8;
+            --color-neutral-700: #d0d0d0;
+            --color-neutral-900: #f5f5f5;
+            --color-emerald-50: #052e22;
+            --color-emerald-700: #6ee7b7;
+        }
+        :root[data-theme="dark"] .theme-light-only, :root:not([data-theme="dark"]) .theme-dark-only { display: none; }
+        body { background-color: var(--page-bg); color: var(--page-fg); }
         /* Material Symbols Rounded © Google, Apache License 2.0 (subset) */
         @font-face {
             font-family: 'Material Symbols Rounded';
@@ -33,7 +68,12 @@
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
     </style>
 </head>
-<body class="bg-[#fafafa] text-[#1a1a1a] antialiased selection:bg-neutral-200">
+<body class="antialiased selection:bg-neutral-200">
+
+    <button id="theme-toggle" type="button" aria-label="Toggle light/dark theme"
+        class="fixed top-4 right-4 z-50 w-9 h-9 inline-flex items-center justify-center rounded-full bg-white border border-neutral-200 text-neutral-600 hover:text-neutral-900 transition-colors">
+        <span class="material-symbols-rounded text-[20px]" id="theme-icon">dark_mode</span>
+    </button>
 
     <div class="max-w-3xl mx-auto px-6 py-16 md:py-24 space-y-10">
 
@@ -71,7 +111,7 @@
                         <span>Email</span>
                     </a>
                     <span class="text-neutral-300">•</span>
-                    <a href="https://drive.google.com/file/d/1D-whrLMOxf4mL8jTDMhOIbmJe6eXPN4C/view?usp=sharing" target="_blank" class="hover:text-black transition-colors inline-flex items-center gap-1.5">
+                    <a href="cv.pdf" target="_blank" class="hover:text-black transition-colors inline-flex items-center gap-1.5">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"></path></svg>
                         <span>Resume</span>
                     </a>
@@ -232,8 +272,10 @@
             <div class="grid grid-cols-1 md:grid-cols-1 gap-6">
                 <div class="bg-white border border-neutral-200 rounded-lg overflow-hidden shadow-xs hover:shadow-md transition-shadow flex flex-col justify-between">
                     <div>
-                        <img src="eyesvlm.png" 
-                            alt="Project Visual" class="w-full h-100 object-contain border-b border-neutral-100">
+                        <img src="eyesvlm_light.png" 
+                            alt="Project Visual" class="theme-light-only w-full h-100 object-contain border-b border-neutral-100">
+                        <img src="eyesvlm_dark.png" 
+                            alt="Project Visual" class="theme-dark-only w-full h-100 object-contain border-b border-neutral-100">
                         <div class="p-5 space-y-2">
                             <h3 class="font-bold text-neutral-900 text-center text-lg">
                                 Through the eyes of a Vision-Language Model
@@ -873,6 +915,20 @@
     </div>
 
     <script>
+        const themeBtn = document.getElementById('theme-toggle');
+        const themeIcon = document.getElementById('theme-icon');
+        const syncThemeIcon = () => {
+            themeIcon.textContent = document.documentElement.dataset.theme === 'dark' ? 'light_mode' : 'dark_mode';
+        };
+        syncThemeIcon();
+        themeBtn.addEventListener('click', () => {
+            const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+            document.documentElement.dataset.theme = next;
+            try { localStorage.setItem('theme', next); } catch (e) {}
+            syncThemeIcon();
+        });
+        new MutationObserver(syncThemeIcon).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
         const tabLinks = document.querySelectorAll('nav a[href^="#"]');
         const tabIds = [...tabLinks].map(a => a.getAttribute('href').slice(1));
 
